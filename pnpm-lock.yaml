@@ -5,15 +5,30 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@datastructures-js/priority-queue':
+    specifier: github:datastructures-js/priority-queue
+    version: github.com/datastructures-js/priority-queue/7970cfa5333892ea834f83916dcb23d89eec4acf
+  '@datastructures-js/queue':
+    specifier: github:datastructures-js/queue
+    version: github.com/datastructures-js/queue/500df410caa9d31eabfd2af32a80a65ea4a76208
+  '@datastructures-js/stack':
+    specifier: github:datastructures-js/stack
+    version: github.com/datastructures-js/stack/79ee3a0ed10cf59e03bd43984235c71428e91f2e
   '@nestjs/common':
     specifier: ^10.0.0
-    version: 10.0.0(reflect-metadata@0.1.13)(rxjs@7.8.1)
+    version: 10.0.0(class-transformer@0.2.3)(class-validator@0.11.1)(reflect-metadata@0.1.13)(rxjs@7.8.1)
   '@nestjs/core':
     specifier: ^10.0.0
     version: 10.0.0(@nestjs/common@10.0.0)(@nestjs/platform-express@10.0.0)(reflect-metadata@0.1.13)(rxjs@7.8.1)
+  '@nestjs/mapped-types':
+    specifier: '*'
+    version: 0.0.1(class-transformer@0.2.3)(class-validator@0.11.1)(reflect-metadata@0.1.13)
   '@nestjs/platform-express':
     specifier: ^10.0.0
     version: 10.0.0(@nestjs/common@10.0.0)(@nestjs/core@10.0.0)
+  datastructures-js:
+    specifier: ^13.0.0
+    version: 13.0.0
   reflect-metadata:
     specifier: ^0.1.13
     version: 0.1.13
@@ -489,6 +504,54 @@ packages:
       '@jridgewell/trace-mapping': 0.3.9
     dev: true
 
+  /@datastructures-js/binary-search-tree@5.3.1:
+    resolution: {integrity: sha512-FgNcahe8U9yaofirAzXUs+gLhR+z6sQgAKnIjdGyBLLemFhrsqyJIHyWxnGWtekELbH9XAUJ8/WezNYNDtPetA==}
+    dev: false
+
+  /@datastructures-js/deque@1.0.4:
+    resolution: {integrity: sha512-zlgVSsxqiAd+scLUILvx8E887o+6kYds9/d4DCM/mFOuUITUlPG/r3u5iPZjzW3o6XPPi+p66p3Kf1+wFxYvLQ==}
+    dev: false
+
+  /@datastructures-js/graph@5.3.0:
+    resolution: {integrity: sha512-Owbn40ha2W22i6yGSTmOb7ppL6RZKCeFf9tVKqFVXClb5rWQgscHDIyuHXFcNkdlsrq3O0E7zvJ45O60/8m/mg==}
+    dependencies:
+      '@datastructures-js/queue': 3.1.4
+    dev: false
+
+  /@datastructures-js/heap@4.3.2:
+    resolution: {integrity: sha512-7/9QSsIZ+wMG3C9++mz9iOjdtTp9C036PISHvNjG3eyFO8nXOBJQFKgeV7M6/+EPl+oXXFRGBb8Ue60LsqTqGw==}
+    dev: false
+
+  /@datastructures-js/linked-list@6.1.1:
+    resolution: {integrity: sha512-nb463C34dh8gVuicDpl44WP7Cz6SGNG9++U7OTzG5plQMLTjoitvCaCdJug1BAHutC4FBYagfBdfiPJORjvslA==}
+    dev: false
+
+  /@datastructures-js/priority-queue@6.3.0:
+    resolution: {integrity: sha512-bJkryPys8zVYMCSjyBPYzJlw5V2kMeOYzGHRBXiGkwqTv8vZ/Ux5RO736T8Y6l3cH+ocbQV9UxlsFwA9qI4VhA==}
+    dependencies:
+      '@datastructures-js/heap': 4.3.2
+    dev: false
+
+  /@datastructures-js/queue@3.1.4:
+    resolution: {integrity: sha512-8QqkdAJQDDd25OBX28lKj7HXD+Cxs6Ee0ogJkZUjD5R1fAvRAWsrCeKop0szqANYjMwdQQd75vyc3Cm8qNJH+Q==}
+    dev: false
+
+  /@datastructures-js/queue@4.2.3:
+    resolution: {integrity: sha512-GWVMorC/xi2V2ta+Z/CPgPGHL2ZJozcj48g7y2nIX5GIGZGRrbShSHgvMViJwHJurUzJYOdIdRZnWDRrROFwJA==}
+    dev: false
+
+  /@datastructures-js/set@4.2.1:
+    resolution: {integrity: sha512-qGJhgclFpV7JTPDEJ/ftrFmIf8s6t5Y9nhc5KffuPt0UjCVc1infAltX7R/XFEBF+f7RAqYl/NIZaOekvU88zg==}
+    dev: false
+
+  /@datastructures-js/stack@3.1.4:
+    resolution: {integrity: sha512-+2+SOvKcNizQaR31AL1Sox4p5rvAlZfvXO9gi6qWrXMvLqb3S5/3t0ZRAefA0ZabQz0LCXOc8aTeHSWSOMrNCQ==}
+    dev: false
+
+  /@datastructures-js/trie@4.2.2:
+    resolution: {integrity: sha512-wZFXic9OLc+BgtnUYr0EIaAZLaPaNt0r1zjf2xJ5JhGwuK0w2vwlOMMj9RHgIeOY+UM0J76CcrmN/wn2LlEYkA==}
+    dev: false
+
   /@eslint-community/eslint-utils@4.4.0(eslint@8.42.0):
     resolution: {integrity: sha512-1/sA4dwrzBAyeUoQ6oxahHKmrZvsnLCg4RfxW3ZFGGmQkSNQPFNLV9CUEFQP1x9EYXHTo5p6xdhZM1Ne9p/AfA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
@@ -865,7 +928,7 @@ packages:
       - webpack-cli
     dev: true
 
-  /@nestjs/common@10.0.0(reflect-metadata@0.1.13)(rxjs@7.8.1):
+  /@nestjs/common@10.0.0(class-transformer@0.2.3)(class-validator@0.11.1)(reflect-metadata@0.1.13)(rxjs@7.8.1):
     resolution: {integrity: sha512-Fa2GDQJrO5TTTcpISWfm0pdPS62V+8YbxeG5CA01zMUI+dCO3v3oFf+BSjqCGUUo7GDNzDsjAejwGXuqA54RPw==}
     peerDependencies:
       class-transformer: '*'
@@ -878,6 +941,8 @@ packages:
       class-validator:
         optional: true
     dependencies:
+      class-transformer: 0.2.3
+      class-validator: 0.11.1
       iterare: 1.2.1
       reflect-metadata: 0.1.13
       rxjs: 7.8.1
@@ -902,7 +967,7 @@ packages:
       '@nestjs/websockets':
         optional: true
     dependencies:
-      '@nestjs/common': 10.0.0(reflect-metadata@0.1.13)(rxjs@7.8.1)
+      '@nestjs/common': 10.0.0(class-transformer@0.2.3)(class-validator@0.11.1)(reflect-metadata@0.1.13)(rxjs@7.8.1)
       '@nestjs/platform-express': 10.0.0(@nestjs/common@10.0.0)(@nestjs/core@10.0.0)
       '@nuxtjs/opencollective': 0.3.2
       fast-safe-stringify: 2.1.1
@@ -915,13 +980,25 @@ packages:
     transitivePeerDependencies:
       - encoding
 
+  /@nestjs/mapped-types@0.0.1(class-transformer@0.2.3)(class-validator@0.11.1)(reflect-metadata@0.1.13):
+    resolution: {integrity: sha512-4G4Ui7Sj0UqXiZsUFk/6cPD3K7uZEFSElzkOftaJ3/lXW+HUi1/vfWXabF53qrzO1enTRQDxt1plDbP6SsqXEg==}
+    peerDependencies:
+      class-transformer: ^0.2.3
+      class-validator: ^0.11.1
+      reflect-metadata: ^0.1.12
+    dependencies:
+      class-transformer: 0.2.3
+      class-validator: 0.11.1
+      reflect-metadata: 0.1.13
+    dev: false
+
   /@nestjs/platform-express@10.0.0(@nestjs/common@10.0.0)(@nestjs/core@10.0.0):
     resolution: {integrity: sha512-jOQBPVpk7B4JFXZZwxHSsY6odIqZlea9CbqKzu/hfDyqRv+AwuJk5gprvvL6RpWAHNyRMH1r5/14bqcXD3+WGw==}
     peerDependencies:
       '@nestjs/common': ^10.0.0
       '@nestjs/core': ^10.0.0
     dependencies:
-      '@nestjs/common': 10.0.0(reflect-metadata@0.1.13)(rxjs@7.8.1)
+      '@nestjs/common': 10.0.0(class-transformer@0.2.3)(class-validator@0.11.1)(reflect-metadata@0.1.13)(rxjs@7.8.1)
       '@nestjs/core': 10.0.0(@nestjs/common@10.0.0)(@nestjs/platform-express@10.0.0)(reflect-metadata@0.1.13)(rxjs@7.8.1)
       body-parser: 1.20.2
       cors: 2.8.5
@@ -959,7 +1036,7 @@ packages:
       '@nestjs/platform-express':
         optional: true
     dependencies:
-      '@nestjs/common': 10.0.0(reflect-metadata@0.1.13)(rxjs@7.8.1)
+      '@nestjs/common': 10.0.0(class-transformer@0.2.3)(class-validator@0.11.1)(reflect-metadata@0.1.13)(rxjs@7.8.1)
       '@nestjs/core': 10.0.0(@nestjs/common@10.0.0)(@nestjs/platform-express@10.0.0)(reflect-metadata@0.1.13)(rxjs@7.8.1)
       '@nestjs/platform-express': 10.0.0(@nestjs/common@10.0.0)(@nestjs/core@10.0.0)
       tslib: 2.5.3
@@ -1217,6 +1294,9 @@ packages:
     dependencies:
       '@types/superagent': 8.1.1
     dev: true
+
+  /@types/validator@10.11.3:
+    resolution: {integrity: sha512-GKF2VnEkMmEeEGvoo03ocrP9ySMuX1ypKazIYMlsjfslfBMhOAtC5dmEWKdJioW4lJN7MZRS88kalTsVClyQ9w==}
 
   /@types/yargs-parser@21.0.3:
     resolution: {integrity: sha512-I4q9QU9MQv4oEOz4tAHJtNz1cwuLxn2F3xcc2iV5WdqLPpUnj30aUuxt1mAxYTG+oe8CZMV/+6rU4S4gRDzqtQ==}
@@ -1902,6 +1982,16 @@ packages:
     resolution: {integrity: sha512-0TNiGstbQmCFwt4akjjBg5pLRTSyj/PkWQ1ZoO2zntmg9yLqSRxwEa4iCfQLGjqhiqBfOJa7W/E8wfGrTDmlZQ==}
     dev: true
 
+  /class-transformer@0.2.3:
+    resolution: {integrity: sha512-qsP+0xoavpOlJHuYsQJsN58HXSl8Jvveo+T37rEvCEeRfMWoytAyR0Ua/YsFgpM6AZYZ/og2PJwArwzJl1aXtQ==}
+
+  /class-validator@0.11.1:
+    resolution: {integrity: sha512-6CGdjwJLmKw+sQbK5ZDo1v1yTajkqfPOUDWSYVIlhUiCh6Phy8sAnMFE2XKHAcKAdoOz4jJUQhjPQWPYUuHxrA==}
+    dependencies:
+      '@types/validator': 10.11.3
+      google-libphonenumber: 3.2.33
+      validator: 12.0.0
+
   /cli-cursor@3.1.0:
     resolution: {integrity: sha512-I/zHAwsKf9FqGoXM4WWRACob9+SNukZTd94DWF57E4toouRulbCxcUh6RKUEOQlYTHJnzkPMySvPNaaSLNfLZw==}
     engines: {node: '>=8'}
@@ -2094,6 +2184,21 @@ packages:
       shebang-command: 2.0.0
       which: 2.0.2
     dev: true
+
+  /datastructures-js@13.0.0:
+    resolution: {integrity: sha512-3KLehk8sGWS2IuncLv0/Wxl1a1VtvQagLDtGNBw3SNbi7893PPxWT8dac+cuHA/N4V25BQL6pHF7IVjdaZFB3Q==}
+    dependencies:
+      '@datastructures-js/binary-search-tree': 5.3.1
+      '@datastructures-js/deque': 1.0.4
+      '@datastructures-js/graph': 5.3.0
+      '@datastructures-js/heap': 4.3.2
+      '@datastructures-js/linked-list': 6.1.1
+      '@datastructures-js/priority-queue': 6.3.0
+      '@datastructures-js/queue': 4.2.3
+      '@datastructures-js/set': 4.2.1
+      '@datastructures-js/stack': 3.1.4
+      '@datastructures-js/trie': 4.2.2
+    dev: false
 
   /debug@2.6.9:
     resolution: {integrity: sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==}
@@ -2790,6 +2895,10 @@ packages:
       merge2: 1.4.1
       slash: 3.0.0
     dev: true
+
+  /google-libphonenumber@3.2.33:
+    resolution: {integrity: sha512-1QKCvAlfq8zY1mviORI9lDzM3I/hwm9+h0CwYBTLq59DBbSHMd5zBOLqHZFiBLicRpwIz46Nynvbywj1XApKvA==}
+    engines: {node: '>=0.10'}
 
   /gopd@1.0.1:
     resolution: {integrity: sha512-d65bNlIadxvpb/A2abVdlqKqV563juRnZ1Wtk6s1sIR8uNsXR70xqIzVqxVf1eTqDunwT2MkczEeaezCKTZhwA==}
@@ -4901,6 +5010,10 @@ packages:
       convert-source-map: 2.0.0
     dev: true
 
+  /validator@12.0.0:
+    resolution: {integrity: sha512-r5zA1cQBEOgYlesRmSEwc9LkbfNLTtji+vWyaHzRZUxCTHdsX3bd+sdHfs5tGZ2W6ILGGsxWxCNwT/h3IY/3ng==}
+    engines: {node: '>= 0.10'}
+
   /vary@1.1.2:
     resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}
     engines: {node: '>= 0.8'}
@@ -5109,3 +5222,23 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
     dev: true
+
+  github.com/datastructures-js/priority-queue/7970cfa5333892ea834f83916dcb23d89eec4acf:
+    resolution: {tarball: https://codeload.github.com/datastructures-js/priority-queue/tar.gz/7970cfa5333892ea834f83916dcb23d89eec4acf}
+    name: '@datastructures-js/priority-queue'
+    version: 6.3.0
+    dependencies:
+      '@datastructures-js/heap': 4.3.2
+    dev: false
+
+  github.com/datastructures-js/queue/500df410caa9d31eabfd2af32a80a65ea4a76208:
+    resolution: {tarball: https://codeload.github.com/datastructures-js/queue/tar.gz/500df410caa9d31eabfd2af32a80a65ea4a76208}
+    name: '@datastructures-js/queue'
+    version: 4.2.3
+    dev: false
+
+  github.com/datastructures-js/stack/79ee3a0ed10cf59e03bd43984235c71428e91f2e:
+    resolution: {tarball: https://codeload.github.com/datastructures-js/stack/tar.gz/79ee3a0ed10cf59e03bd43984235c71428e91f2e}
+    name: '@datastructures-js/stack'
+    version: 3.1.4
+    dev: false
