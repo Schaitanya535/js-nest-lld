@@ -4,6 +4,6 @@ import { BrowserHistoryController } from './browser-history.controller';
 
 @Module({
   controllers: [BrowserHistoryController],
-  providers: [BrowserHistoryService]
+  providers: [BrowserHistoryService],
 })
 export class BrowserHistoryModule {}
