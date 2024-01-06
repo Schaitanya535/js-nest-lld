@@ -6,4 +6,4 @@ import { LeaderboardController } from './leaderboard.controller';
   controllers: [LeaderboardController],
   providers: [LeaderboardService],
 })
-export class LeaderboardModule {}
+export class LeaderBoardModule {}
