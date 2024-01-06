@@ -1,16 +1,18 @@
 import { Injectable } from '@nestjs/common';
 import { Ticket } from 'src/parking-lot/entities/tickets.entity';
+import { ParkingLotService } from 'src/parking-lot/services/parking-lot.service';
 
 @Injectable()
 export class TicketService {
   private tickets: Map<string, Ticket>;
-  constructor() {
+  constructor(private readonly parkingLotService: ParkingLotService) {
     this.tickets = new Map<string, Ticket>();
   }
 
   public createTicket(plateNumber: string) {
-    const ticket = new Ticket(plateNumber);
-    this.tickets.set(ticket.getId(), new Ticket(plateNumber));
+    const spotId = this.parkingLotService.getParkingSpot('gate1', plateNumber);
+    const ticket = new Ticket(plateNumber, spotId);
+    this.tickets.set(ticket.getId(), ticket);
     return ticket;
   }
 

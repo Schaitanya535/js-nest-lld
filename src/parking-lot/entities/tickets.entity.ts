@@ -6,13 +6,17 @@ export class Ticket {
   private entryTime: Date;
   private exitTime: Date;
   private paymentStatus: TPaymentStatus;
+  private parkingSpotId: string;
 
-  constructor(plateNumber: string) {
+  constructor(plateNumber: string, parkingSpotId: string) {
     this.id = Math.random().toString(36).substr(2, 9);
     this.plateNumber = plateNumber;
     this.entryTime = new Date();
     this.paymentStatus = 'UNPAID';
+    this.parkingSpotId = parkingSpotId;
+    return this;
   }
+
   public getId(): string {
     return this.id;
   }
