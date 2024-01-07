@@ -3,14 +3,14 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { LeaderBoardModule } from './leaderboard/leaderboard.module';
 import { BrowserHistoryModule } from './browser-history/browser-history.module';
-import { LruCacheModule } from './lru-cache/lru-cache.module';
+import { CachesModule } from './caches/caches.module';
 import { ParkingLotModule } from './parking-lot/parking-lot.module';
 
 @Module({
   imports: [
     LeaderBoardModule,
     BrowserHistoryModule,
-    LruCacheModule,
+    CachesModule,
     ParkingLotModule,
   ],
   controllers: [AppController],
